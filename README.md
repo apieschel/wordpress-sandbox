@@ -1,1 +1,1 @@
-Sandbox for exploring algorithms, data structures, and WordPress quirks. Built on the Underscores starter theme.
+WordPress theme sandbox for exploring algorithms, data structures, and WordPress quirks. Built on the Underscores starter theme. Should work an any standard WordPress installation.
