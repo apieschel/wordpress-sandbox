@@ -101,7 +101,18 @@ function bitonicArrayMaximum($array) {
 
 // binary search method
 function bitonicArrayMaximum2($array) {
-	return $array;
+	$start = 0; 
+	$end = count($array) - 1;
+	
+	while($start < $end) {
+		$middle = $start + ($end - $start) / 2;
+		if($array[$middle] > $array[$middle + 1]) {
+			$end = $middle; 
+		} else {
+			$start = $middle + 1;	
+		}
+	}
+	return $array[$start];
 }
 
 ?>

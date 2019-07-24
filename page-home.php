@@ -17,9 +17,10 @@
 	<?php get_template_part( 'template-parts/content', 'algorithms' ); ?>
 	
 	<?php 
-		$array = array(1, 3, 8, 9, 12, 13, 4, 2);
+		$array = array(3, 8, 3, 1);
+		print_r($array);
 		echo "The largest value in the array is: "; ?><br><br> 
-		<?php print_r(bitonicArrayMaximum($array)); ?> 
+		<?php print_r(bitonicArrayMaximum2($array)); ?> 
 	
 </div><br><br><br><br>
 
