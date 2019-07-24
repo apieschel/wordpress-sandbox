@@ -17,9 +17,9 @@
 	<?php get_template_part( 'template-parts/content', 'algorithms' ); ?>
 	
 	<?php 
-		$val = 30;
-		echo "All of the primes less than or equal to " . $val . " are: "; ?><br><br> 
-		<?php print_r(Eratosthenes2($val)); ?> 
+		$array = array(1, 3, 8, 12, 4, 2);
+		echo "The largest value in the array is: "; ?><br><br> 
+		<?php print_r(bitonicArrayMaximum($array)); ?> 
 	
 </div><br><br><br><br>
 

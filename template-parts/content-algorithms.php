@@ -79,4 +79,14 @@
 		return $B;
 	}
 
+	function bitonicArrayMaximum($array) {
+		$middle = $array[count($array) / 2];
+		$left = $array[(count($array) / 2) - 1];
+		$right = $array[(count($array) / 2) + 1];
+		
+		if($middle > $left && $middle > $right) {
+			return $middle;	
+		}
+	}
+
 ?>
