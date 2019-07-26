@@ -22,6 +22,9 @@
 			<?php echo esc_html('if( is_multisite() ) {'); ?><br>
 			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;global $wpdb;'); ?><br>
 			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$blogs = $wpdb->get_results("SELECT blog_id FROM'); ?><br>
+			<?php echo esc_html('{$wpdb->blogs}", ARRAY_A);'); ?><br><br>
+			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!empty($blogs)){'); ?><br>
+			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach($blogs as $blog){'); ?><br>
 		</code>
 	</div><!--.code-->
 	
