@@ -45,7 +45,8 @@
 				https://developer.wordpress.org/reference/functions/delete_site_option/
 				https://developer.wordpress.org/plugins/plugin-basics/uninstall-methods/
 				https://codex.wordpress.org/Function_Reference/switch_to_blog
-				https://core.trac.wordpress.org/ticket/14992 */
+				https://core.trac.wordpress.org/ticket/14992 
+				https://serverpilot.io/docs/why-you-should-not-use-wordpress-multisite */
 		
 		echo esc_html('An anti-pattern is a common solution to a problem that is nonetheless ineffective and counterproductive, or perhaps unnecessarily resource intensive. This code would probably qualify as an anti-pattern in the case of most WordPress multisite installations that managed a large number of sites. While it might intuitively make sense to loop through all blogs one by one in order to make sure a plugin option is fully removed from each one, in a multisite install, looping through all blogs to delete options can be very resource intensive (https://developer.wordpress.org/plugins/plugin-basics/uninstall-methods/). A shorter, more readable, and less resource intensive version of this code would simply accompany each instance of delete_option(&#39;option_name&#39;) with a call of delete_site_option(&#39;option_name&#39;), which removes an option by name from the current network.'); ?>
 	</p>
