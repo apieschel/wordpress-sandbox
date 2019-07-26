@@ -38,7 +38,7 @@
 	
 	<h2><?php esc_html_e('Explanation', 'apieschel'); ?></h2>
 	<p>
-		<?php echo esc_html(''); ?>
+		<?php echo esc_html('An anti-pattern is a common solution to a problem that is nonetheless ineffective and counterproductive.'); ?>
 	</p>
 	
 	<h2><?php esc_html_e('Answer', 'apieschel'); ?></h2>
