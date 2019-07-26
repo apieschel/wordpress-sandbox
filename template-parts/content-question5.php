@@ -18,13 +18,21 @@
 	<div class="code">
 		<code>
 			<?php echo esc_html('<?php'); ?><br>
-			<?php echo esc_html('// file: uninstall.php'); ?><br>
-			<?php echo esc_html('if( is_multisite() ) {'); ?><br>
+			<?php echo esc_html('//file: uninstall.php'); ?><br>
+			<?php echo esc_html('if(is_multisite()){'); ?><br>
 			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;global $wpdb;'); ?><br>
 			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$blogs = $wpdb->get_results("SELECT blog_id FROM'); ?><br>
 			<?php echo esc_html('{$wpdb->blogs}", ARRAY_A);'); ?><br><br>
 			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!empty($blogs)){'); ?><br>
 			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach($blogs as $blog){'); ?><br>
+			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch_to_blog($blog["blogid"]);'); ?>
+			<br>
+			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delete_option(&#39;option_name&#39;);'); ?><br>
+			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'); ?><br>
+			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'); ?><br>
+			<?php echo esc_html('}else{'); ?><br>
+			<?php echo esc_html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delete_option(&#39;option_name&#39;);'); ?><br>
+			<?php echo esc_html('}'); ?><br>
 		</code>
 	</div><!--.code-->
 	
