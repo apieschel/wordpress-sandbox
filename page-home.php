@@ -14,6 +14,8 @@
 	<br><br><br><hr><br>
 	<?php get_template_part( 'template-parts/content', 'question4' ); ?>
 	<br><br><br><hr><br>
+	<?php get_template_part( 'template-parts/content', 'question5' ); ?>
+	<br><br><br><hr><br>
 	<?php get_template_part( 'template-parts/content', 'algorithms' ); ?>
 	
 	<?php 
