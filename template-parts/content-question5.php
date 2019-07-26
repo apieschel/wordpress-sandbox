@@ -38,7 +38,7 @@
 	
 	<h2><?php esc_html_e('Explanation', 'apieschel'); ?></h2>
 	<p>
-		<?php echo esc_html('An anti-pattern is a common solution to a problem that is nonetheless ineffective and counterproductive.'); ?>
+		<?php echo esc_html('An anti-pattern is a common solution to a problem that is nonetheless ineffective and counterproductive. The switch_to_blog() function does not switch autoload options, plugins, or the object cache. Therefore, if any options are autoloaded, they might not be properly deleted.'); ?>
 	</p>
 	
 	<h2><?php esc_html_e('Answer', 'apieschel'); ?></h2>
@@ -51,6 +51,10 @@
 	<h2><?php esc_html_e('Code Execution', 'test'); ?></h2>
 	
 	<?php
+	
+	global $wpdb;
+	$blogs = $wpdb;
+	var_dump($blogs);
 	
 	?>
 </article>
