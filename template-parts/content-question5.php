@@ -50,10 +50,4 @@
 			<?php echo esc_html('delete_site_option(&#39;option_name&#39;);'); ?><br>
 		</code>
 	</div><!--.code-->
-	
-	<h2><?php esc_html_e('Code Execution', 'test'); ?></h2>
-	
-	<?php
-	
-	?>
 </article>
