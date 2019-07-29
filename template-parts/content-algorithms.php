@@ -1,5 +1,8 @@
 <?php 
 
+// job search personal narrative that includes a common algorithms section:
+// https://www.freecodecamp.org/forum/t/my-long-document-on-my-advice-on-getting-a-job/258707
+
 function sumPrimes($val) {
 	if($val == 1) {
 		return 1;
